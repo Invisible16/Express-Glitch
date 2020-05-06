@@ -1,0 +1,8 @@
+h1 List users
+form(action="/todos/search", method="get")
+  input(type="text", name="q", value=q)
+  button(type="submit") Search
+ul
+ each item in todoList
+   li=item.todo
+a(href='/todos/create') Add new todo
